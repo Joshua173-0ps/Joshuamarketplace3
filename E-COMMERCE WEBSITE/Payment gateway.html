@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Payment Gateway</h1>
+    </header>
+    <main>
+        <section class="payment-form">
+            <h1>Enter Payment Details</h1>
+            <form>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456"><br><br>
+                <label for="expiration date">Expiration Date:</label>
+                <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YYYY"><br><br>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123"><br><br>
+                <label for="amount">Amount:</label>
+                <input type="text" id="number" name="amount" placeholder="100.0"><br><br>
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+        <section class="payment-methods">
+            <h2>Payment Methods</h2>
+            <ul>
+                <li><input type="radio" id="credit-card" name="payment-method" value="credit-card">Credit Card</li>
+                <li><input type="radio" id="paypal" name="payment-method" value="paypal">PayPal</li>
+                <li><input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">Bank Transfer</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

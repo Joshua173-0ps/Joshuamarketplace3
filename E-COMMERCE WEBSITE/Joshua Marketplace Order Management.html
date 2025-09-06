@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management | Joahua Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+     <header>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.css">Products</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#"></a>Contact</li>
+            </ul>
+        </nav>
+     </header>
+     <!-- Order Management Section -->
+      <section class="order-management">
+        <h1>Order Management</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Order date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ORD-001</td>
+                    <td>Nabachwa Esther</td>
+                    <td>2025-05-15</td>
+                    <td>pending</td>
+                <td>
+                    <button>View</button>
+                    <button>Edit</button>
+                    <button>Cancel</button>
+                </td>
+                </tr>
+                <tr>
+                    <td>ORD-003</td>
+                    <td>Bob Johnson</td>
+                    <td>2025-02-17</td>
+                    <td>Delivered</td>
+                    <td>
+                        <button>View</button>
+                        <button>Edit</button>
+                        <button>Cancel</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+      <!-- Order Details Section -->
+       <section class="order-details">
+        <h2>Order Details</h2>
+        <form>
+            <label for="order-id">Order ID:</label>
+            <input type="text" id="order-id" name="oreder-id" readonly><br><br>
+            <label for="customer-man">Customer Name:</label>
+            <input type="text" id="customer-name" name="customer-name" readonly><br><br>
+            <label for="order-date">Order Date:</label>
+            <input type="date" id="order-date" name="order-date">
+            <label for="status">Status:</label>
+            <select name="status" id="status">
+                <option value="pending">Pending</option>
+                <option value="shipped">Shipped</option>
+                <option value="delivered">Delivered</option>
+                <option value="canceled">Cancelled</option>
+            </select><br><br>
+            <button>Update Status</button>
+        </form>
+       </section>
+       <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Joshua Marketplace</p>
+        </footer>
+</body>
+</html>

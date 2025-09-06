@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href=""></a></li>
+                <li><a href="#">Buyers</a></li>
+                <li><a href=""></a></li>
+                <li><a href="#" id="register-btn">Register</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Joshua Marketplace</h1>
+            <p>Connecting buyers and sellers</p>
+            <button>Explore Products</button>
+        </section>
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Product cards will go here-->
+                 <div class="product-card">
+                    <img src="Product 1" alt="">
+                    <h3>Product Name</h3>
+                    <p>Product Description</p>
+                    <button>View Details</button>
+                 </div>
+            </div>
+        </section>
+        <!-- Registration Modal -->
+         <div id="register-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Register</h2>
+                <form id="register-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                    <label for="user-type">User Type:</label>
+                    <select name="user-type" id="user-type">
+                        <option value="buyer">Buyer</option>
+                        <option value="sellers">Seller</option>
+                    </select><br><br>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+         </div>
+         <!-- Login Modal -->
+          <div id="login-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username"><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br><br>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+          </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Joshua Marketplace</p>
+    </footer>
+    <script src="script.css"></script>
+</body>
+</html>
